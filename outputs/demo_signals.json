@@ -1,0 +1,56 @@
+{
+  "generated_at": "2026-03-28T07:55:12.041821",
+  "mode": "mock",
+  "stats": {
+    "file_events": 6,
+    "git_commits": 10,
+    "terminal_commands": 80,
+    "token_estimate": 312
+  },
+  "file_events": [
+    {"path": "/tmp/ambient_demo_abc123/main.py", "event_type": "modified", "timestamp": 1743148512.0},
+    {"path": "/tmp/ambient_demo_abc123/api.py", "event_type": "modified", "timestamp": 1743148512.1},
+    {"path": "/tmp/ambient_demo_abc123/models.py", "event_type": "modified", "timestamp": 1743148512.2},
+    {"path": "/tmp/ambient_demo_abc123/storage.py", "event_type": "modified", "timestamp": 1743148512.3},
+    {"path": "/tmp/ambient_demo_abc123/config.py", "event_type": "modified", "timestamp": 1743148512.4},
+    {"path": "/tmp/ambient_demo_abc123/tests/test_api.py", "event_type": "modified", "timestamp": 1743148512.5}
+  ],
+  "git_commits": [
+    {"hash": "a3f12e8c", "author": "Dev Demo <dev@example.com>", "message": "Add DELETE /items/{id} endpoint", "timestamp": 1743148480.0, "repo_path": "/tmp/ambient_demo_abc123"},
+    {"hash": "9b2d4a71", "author": "Dev Demo <dev@example.com>", "message": "Improve error messages for 404 responses", "timestamp": 1743148460.0, "repo_path": "/tmp/ambient_demo_abc123"},
+    {"hash": "c1e73f90", "author": "Dev Demo <dev@example.com>", "message": "Add input validation to ItemCreate", "timestamp": 1743148440.0, "repo_path": "/tmp/ambient_demo_abc123"},
+    {"hash": "87a5d3b2", "author": "Dev Demo <dev@example.com>", "message": "Fix pagination in list_items endpoint", "timestamp": 1743148420.0, "repo_path": "/tmp/ambient_demo_abc123"},
+    {"hash": "4f8c0e6d", "author": "Dev Demo <dev@example.com>", "message": "Add configuration management", "timestamp": 1743148400.0, "repo_path": "/tmp/ambient_demo_abc123"},
+    {"hash": "f2a89c31", "author": "Dev Demo <dev@example.com>", "message": "Add integration test suite", "timestamp": 1743148380.0, "repo_path": "/tmp/ambient_demo_abc123"},
+    {"hash": "b7d34e12", "author": "Dev Demo <dev@example.com>", "message": "Implement in-memory storage layer", "timestamp": 1743148360.0, "repo_path": "/tmp/ambient_demo_abc123"},
+    {"hash": "e9c61a05", "author": "Dev Demo <dev@example.com>", "message": "Define Item and ItemCreate models", "timestamp": 1743148340.0, "repo_path": "/tmp/ambient_demo_abc123"},
+    {"hash": "d5f28b94", "author": "Dev Demo <dev@example.com>", "message": "Add REST API with FastAPI", "timestamp": 1743148320.0, "repo_path": "/tmp/ambient_demo_abc123"},
+    {"hash": "8a1c7f63", "author": "Dev Demo <dev@example.com>", "message": "Initial project scaffold", "timestamp": 1743148300.0, "repo_path": "/tmp/ambient_demo_abc123"}
+  ],
+  "terminal_commands": [
+    {"command": "git status", "timestamp": 1743148500.0},
+    {"command": "git diff HEAD~1", "timestamp": 1743148497.5},
+    {"command": "python -m pytest tests/ -v", "timestamp": 1743148495.0},
+    {"command": "pip install fastapi uvicorn", "timestamp": 1743148492.5},
+    {"command": "git commit -m 'Fix pagination in list_items endpoint'", "timestamp": 1743148490.0},
+    {"command": "python main.py --debug", "timestamp": 1743148487.5},
+    {"command": "grep -r 'def create' .", "timestamp": 1743148485.0},
+    {"command": "cat api.py", "timestamp": 1743148482.5},
+    {"command": "vim models.py", "timestamp": 1743148480.0},
+    {"command": "git log --oneline -10", "timestamp": 1743148477.5},
+    {"command": "docker build -t demo-api .", "timestamp": 1743148475.0},
+    {"command": "python -c 'from api import create_app; print(create_app())'", "timestamp": 1743148472.5},
+    {"command": "git push origin main", "timestamp": 1743148470.0},
+    {"command": "pip freeze > requirements.txt", "timestamp": 1743148467.5},
+    {"command": "curl localhost:8000/health", "timestamp": 1743148465.0},
+    {"command": "ls -la", "timestamp": 1743148462.5},
+    {"command": "make test", "timestamp": 1743148460.0},
+    {"command": "black . && isort .", "timestamp": 1743148457.5},
+    {"command": "mypy main.py api.py models.py", "timestamp": 1743148455.0},
+    {"command": "uvicorn api:app --reload --port 8000", "timestamp": 1743148452.5}
+  ],
+  "context_summary": {
+    "text": "## Current Developer Context\n*Collected: 2026-03-28 07:55:12 | Files: 6, Commits: 10, Commands: 80*\n\n**Active Work:**\n- main.py\n- api.py\n- models.py\n- storage.py\n- config.py\n- test_api.py\n\n**Recent Git Commits:**\n- `a3f12e8c` Add DELETE /items/{id} endpoint \u2014 Dev Demo\n- `9b2d4a71` Improve error messages for 404 responses \u2014 Dev Demo\n- `c1e73f90` Add input validation to ItemCreate \u2014 Dev Demo\n- `87a5d3b2` Fix pagination in list_items endpoint \u2014 Dev Demo\n- `4f8c0e6d` Add configuration management \u2014 Dev Demo\n\n**Recent Terminal Commands:**\n- `git status`\n- `git diff HEAD~1`\n- `python -m pytest tests/ -v`\n- `pip install fastapi uvicorn`\n- `git commit -m 'Fix pagination in list_items endpoint'`\n- `python main.py --debug`\n- `grep -r 'def create' .`\n- `uvicorn api:app --reload --port 8000`\n\n**Context Summary:**\nDeveloper is engaged in Python development. Tests are being run regularly, indicating TDD or validation workflow. Git operations suggest active commit/push cycle. 6 file event(s) in the last hour, 10 commit(s), 80 commands tracked.\n\n**Key Signals:**\n- Modified files: 6\n- Commits detected: 10\n- Commands tracked: 80\n- Meeting notes indexed: 0\n- Confidence score: 88.5/100\n\n*Mock mode \u2014 set ANTHROPIC_API_KEY or OPENROUTER_API_KEY for AI-powered compression*",
+    "token_estimate": 312
+  }
+}
